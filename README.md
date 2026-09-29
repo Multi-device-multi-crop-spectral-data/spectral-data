@@ -212,8 +212,8 @@ dataset = SpectralDataset(data_path=DATA_PATH, device=Device.SCAN_CODER)
 dataloader = SpectralDataLoader(dataset, batch_size=150)
 
 
-# Load data for only a single disease class e.g CMD
-x, y = dataloader.load_data_of_disease_class('CMD')
+# Load data for only a single disease class e.g CBSD
+x, y = dataloader.load_data_of_disease_class('CBSD')
 
 # Load data for a specific label across all weeks
 x_1, y_1 = dataloader.load_data_of('BBLB1')
